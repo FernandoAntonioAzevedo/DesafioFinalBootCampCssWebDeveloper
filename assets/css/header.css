@@ -1,0 +1,46 @@
+.header {
+    margin-top: 3.125rem;
+    padding: 6.25rem 0 18.75rem;
+    position: relative;
+
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+
+    animation: gradient 5s ease infinite alternate;
+}
+
+.header::after {
+    content: "";
+    width: 100%;
+    height: 15.625rem;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, var(--primary-color), transparent);
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    margin: auto;
+    padding: 0 2.5rem;
+}
+
+.header__channels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.header__channel {
+    object-fit: contain;
+}
+
+.header__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+}
